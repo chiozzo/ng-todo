@@ -17,6 +17,12 @@
 
 <section ng-controller="TodoController">
 	<h1>{{title}}</h1>
+
+	<div>
+		<ul ng-repeat="todo in todos">
+			<li>{{todo.name}}</li>
+		</ul>
+	</div>
 </section>
 
 <script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
